@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in;
+  }
+
+  .animate-float {
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+      transform: translateY(-40px) translateX(-10px);
+    }
+    75% {
+      transform: translateY(-20px) translateX(5px);
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .delay-2000 {
+    animation-delay: 2s;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(34, 211, 238, 0.5);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 211, 238, 0.8);
+}
