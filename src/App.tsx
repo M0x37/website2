@@ -286,7 +286,7 @@ function App() {
           </section>
 
           <footer className="py-16 border-t border-gray-800 text-center text-gray-500">
-            <p>© 2025 Max. Crafted with coffee and passion.</p>
+            <p>© 2026 Max. Crafted with coffee and passion.</p>
           </footer>
         </div>
       </div>
