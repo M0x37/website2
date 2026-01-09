@@ -6,9 +6,6 @@ export default defineConfig({
   base: '/',
   plugins: [react()],
   server: {
-    headers: {
-      'Content-Type': 'application/javascript',
-    },
     port: 5173,
     strictPort: true,
     open: true,
